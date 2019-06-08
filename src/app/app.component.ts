@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-FAsT';
+  foundingYear = Number(new Date().getFullYear().toString());
 }
