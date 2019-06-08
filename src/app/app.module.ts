@@ -9,12 +9,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { HeaderComponent } from './navigation/header/header.component';
 import { FooterComponent } from './navigation/footer/footer.component';
+import { AngularComponent } from './pages/angular/angular.component';
+import { FirebaseComponent } from './pages/firebase/firebase.component';
+import { NgmaterialComponent } from './pages/ngmaterial/ngmaterial.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AngularComponent,
+    FirebaseComponent,
+    NgmaterialComponent
   ],
   imports: [
     BrowserModule,
