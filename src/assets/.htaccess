@@ -32,10 +32,10 @@ RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
     </filesmatch>
     # css and js should use private for proxy caching https://developers.google.com/speed/docs/best-practices/caching#LeverageProxyCaching
     <filesmatch "\.(css)$">
-        Header set Cache-Control "max-age=3600, private"
+        Header set Cache-Control "max-age=31536000, private"
     </filesmatch>
     <filesmatch "\.(js)$">
-        Header set Cache-Control "max-age=3600, private"
+        Header set Cache-Control "max-age=31536000, private"
     </filesmatch>
     <filesMatch "\.(x?html?|php)$">
         Header set Cache-Control "max-age=600, private, must-revalidate"
