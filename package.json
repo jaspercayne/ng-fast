@@ -16,12 +16,14 @@
     "start": "npm run nghm -- serve",
     "serve": "npm run nghm -- serve --prod",
     "build": "npm run clean && npm run nghm -- build --prod && npm run clean:prod",
+    "build:stats": "npm run nghm -- build --prod --stats-json",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "analyze": "npm run nghm -- build --prod --stats-json && webpack-bundle-analyzer dist/ng-fast/stats-es2015.json",
+    "analyze": "npm run build:stats && webpack-bundle-analyzer dist/ng-fast/stats-es2015.json",
     "clean": "rimraf ./dist/*",
-    "clean:prod": "rimraf ./dist/browser/assets/.htaccess && rimraf ./dist/browser/assets/robots.txt"
+    "clean:prod": "rimraf ./dist/ng-fast/assets/.htaccess && rimraf ./dist/ng-fast/assets/robots.txt",
+    "clean:stats": "rimraf ./dist/ng-fast/"
   },
   "private": true,
   "dependencies": {
