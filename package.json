@@ -1,24 +1,43 @@
 {
   "name": "ng-fast",
   "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaspercayne/ng-fast.git"
+  },
+  "author": "Mick Evans",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/jaspercayne/ng-fast/issues"
+  },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "nghm": "node --max_old_space_size=4096 ./node_modules/@angular/cli/bin/ng",
+    "start": "npm run nghm -- serve",
+    "build": "npm run clean && npm run nghm -- build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "analyze": "npm run nghm -- build --prod --stats-json && webpack-bundle-analyzer dist/browser/stats.json",
+    "clean": "rimraf ./dist/*",
+    "serve": "npm run nghm -- serve --prod"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.0.0",
+    "@angular/cdk": "~8.0.0",
     "@angular/common": "~8.0.0",
     "@angular/compiler": "~8.0.0",
     "@angular/core": "~8.0.0",
     "@angular/forms": "~8.0.0",
+    "@angular/material": "^8.0.0",
     "@angular/platform-browser": "~8.0.0",
     "@angular/platform-browser-dynamic": "~8.0.0",
+    "@angular/pwa": "^0.800.2",
     "@angular/router": "~8.0.0",
+    "@angular/service-worker": "~8.0.0",
+    "hammerjs": "^2.0.8",
+    "rimraf": "^2.6.3",
     "rxjs": "~6.4.0",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"
