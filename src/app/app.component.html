@@ -27,19 +27,20 @@
     </mat-card-content>
   </mat-card>
 
-  <div class="resources">
+  <mat-card class="resources">
+    <p>For all resources, please see the following pages:</p>
     <!-- Angular card -->
-    <app-angular></app-angular>
+    <a routerLink="angular">Angular</a>
 
     <!-- Firebase card -->
-    <app-firebase></app-firebase>
+    <a routerLink="firebase">Firebase</a>
 
     <!-- Angular Material card -->
-    <app-ngmaterial></app-ngmaterial>
-  </div>
+    <a routerLink="ngmat">Angular Material</a>
+  </mat-card>
 
   <router-outlet></router-outlet>
 </div>
 
 <!-- Footer -->
-<app-footer [foundingYear]=foundingYear></app-footer>
+<app-footer [foundingYear]="foundingYear"></app-footer>
