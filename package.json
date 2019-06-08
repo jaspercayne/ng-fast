@@ -18,7 +18,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "analyze": "npm run nghm -- build --prod --stats-json && webpack-bundle-analyzer dist/browser/stats.json",
+    "analyze": "npm run nghm -- build --prod --stats-json && webpack-bundle-analyzer dist/ng-fast/stats-es2015.json",
     "clean": "rimraf ./dist/*",
     "serve": "npm run nghm -- serve --prod"
   },
