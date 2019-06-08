@@ -31,7 +31,7 @@
               { "glob": ".htaccess", "input": "src/assets", "output": "/" }
             ],
             "styles": [
-
+              "src/styles.scss"
             ],
             "scripts": []
           },
