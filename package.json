@@ -14,7 +14,7 @@
     "ng": "ng",
     "nghm": "node --max_old_space_size=4096 ./node_modules/@angular/cli/bin/ng",
     "start": "npm run nghm -- serve",
-    "build": "ng build",
+    "build": "npm run clean && npm run nghm -- build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
