@@ -3,6 +3,14 @@
 * https://material-theme-generator.travetto.io
 */
 
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 @import '~@angular/material/theming';
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
@@ -181,8 +189,8 @@ $mat-warn: (
 );
 $theme-warn: mat-palette($mat-warn, main, lighter, darker);;
 
-$theme: mat-light-theme($theme-primary, $theme-accent, $theme-warn);
-$altTheme: mat-dark-theme($theme-primary, $theme-accent, $theme-warn);
+$theme: mat-dark-theme($theme-primary, $theme-accent, $theme-warn);
+$altTheme: mat-light-theme($theme-primary, $theme-accent, $theme-warn);
 
 // Theme Init
 @include angular-material-theme($theme);
