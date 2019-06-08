@@ -15,12 +15,13 @@
     "nghm": "node --max_old_space_size=4096 ./node_modules/@angular/cli/bin/ng",
     "start": "npm run nghm -- serve",
     "serve": "npm run nghm -- serve --prod",
-    "build": "npm run clean && npm run nghm -- build --prod",
+    "build": "npm run clean && npm run nghm -- build --prod && npm run clean:prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "analyze": "npm run nghm -- build --prod --stats-json && webpack-bundle-analyzer dist/ng-fast/stats-es2015.json",
-    "clean": "rimraf ./dist/*"
+    "clean": "rimraf ./dist/*",
+    "clean:prod": "rimraf ./dist/browser/assets/.htaccess && rimraf ./dist/browser/assets/robots.txt"
   },
   "private": true,
   "dependencies": {
