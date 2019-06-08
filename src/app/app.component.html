@@ -1,114 +1,170 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <mat-toolbar color="secondary">
-  <img
-    alt="Ng-Fast logo"
-    src="../assets/icons/icon-72x72.png"
-  />
+  <img alt="Ng-Fast logo" src="../assets/icons/icon-72x72.png" />
   {{ title }}
 </mat-toolbar>
 
-<mat-card style="text-align:center">
-  <mat-card-header>
+<div class="container">
+  <mat-card class="ngfast">
+    <mat-card-header>
       <img
-      mat-card-avatar
-    alt="Ng-Fast logo"
-    src="../assets/icons/icon-72x72.png"
-  />
-    <mat-card-title> Welcome to {{ title }}! </mat-card-title>
-    <mat-card-subtitle>
-      Firebase Angular simple Template
-    </mat-card-subtitle>
-  </mat-card-header>
-  <mat-card-content>
-    <h4>
-      A high performance PWA template using Firebase Hosting, Angular and
-      Material Design
-    </h4>
+        mat-card-avatar
+        alt="Ng-Fast logo"
+        src="../assets/icons/icon-72x72.png"
+      />
+      <mat-card-title> Welcome to {{ title }}! </mat-card-title>
+      <mat-card-subtitle>
+        Firebase Angular simple Template
+      </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <h4>
+        A high performance PWA template using Firebase Hosting, Angular and
+        Material Design
+      </h4>
 
-    <p>
-      A publicly usable Angular PWA template that scores ~100 in all Lighthouse
-      tests, depending on the environment it is hosted in.
-    </p>
-  </mat-card-content>
-</mat-card>
+      <p>
+        A publicly usable Angular PWA template that scores ~100 in all
+        Lighthouse tests, depending on the environment it is hosted in.
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>
 
-<mat-card>
-  <mat-card-header>
-      <img mat-card-avatar src="https://img.icons8.com/color/48/000000/angularjs.png">
-    <mat-card-title>
-      Angular Resources
-    </mat-card-title>
-  </mat-card-header>
-  <mat-card-content>
-    <p>Here are some links to help you get started with Angular:</p>
-    <mat-list>
-      <mat-list-item>
-        <h2>
-          <a target="_blank" rel="noopener" href="https://angular.io/tutorial"
-            >Tour of Heroes</a
-          >
-        </h2>
-      </mat-list-item>
-      <mat-list-item>
-        <h2>
-          <a target="_blank" rel="noopener" href="https://angular.io/cli"
-            >CLI Documentation</a
-          >
-        </h2>
-      </mat-list-item>
-      <mat-list-item>
-        <h2>
-          <a target="_blank" rel="noopener" href="https://blog.angular.io/"
-            >Angular blog</a
-          >
-        </h2>
-      </mat-list-item>
-    </mat-list>
-  </mat-card-content>
-</mat-card>
+<div class="resources">
+  <!-- Angular card -->
+    <mat-card class="angular">
+      <mat-card-header>
+        <img
+          mat-card-avatar
+          alt="Angular logo"
+          src="https://img.icons8.com/color/48/000000/angularjs.png"
+        />
+        <mat-card-title>
+          Angular Resources
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Here are some links to help you get started with Angular:</p>
+        <mat-list>
+          <mat-list-item>
+            <h2>
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://angular.io/tutorial"
+                >Tour of Heroes</a
+              >
+            </h2>
+          </mat-list-item>
+          <mat-list-item>
+            <h2>
+              <a target="_blank" rel="noopener" href="https://angular.io/cli"
+                >CLI Documentation</a
+              >
+            </h2>
+          </mat-list-item>
+          <mat-list-item>
+            <h2>
+              <a target="_blank" rel="noopener" href="https://blog.angular.io/"
+                >Angular blog</a
+              >
+            </h2>
+          </mat-list-item>
+        </mat-list>
+      </mat-card-content>
+    </mat-card>
 
-<mat-card>
-  <mat-card-header>
-      <img mat-card-avatar src="https://img.icons8.com/color/48/000000/firebase.png">
-    <mat-card-title>
-      Firebase Resources
-    </mat-card-title>
-  </mat-card-header>
-  <mat-card-content>
-    <p>Here are some links to help you get started with Firebase:</p>
-    <mat-list>
-      <mat-list-item>
-        <h2>
-          <a
-            target="_blank"
-            rel="noopener"
-            href="https://firebase.google.com/docs/"
-            >Firebase Docs</a
-          >
-        </h2>
-      </mat-list-item>
-      <mat-list-item>
-        <h2>
-          <a
-            target="_blank"
-            rel="noopener"
-            href="https://firebase.google.com/docs/hosting/"
-            >Hosting Documentation</a
-          >
-        </h2>
-      </mat-list-item>
-      <mat-list-item>
-        <h2>
-          <a
-            target="_blank"
-            rel="noopener"
-            href="https://firebase.googleblog.com/"
-            >Firebase blog</a
-          >
-        </h2>
-      </mat-list-item>
-    </mat-list>
-  </mat-card-content>
-</mat-card>
+    <!-- Firebase card -->
+    <mat-card class="firebase">
+      <mat-card-header>
+        <img
+          mat-card-avatar
+          alt="Firebase logo"
+          src="https://img.icons8.com/color/48/000000/firebase.png"
+        />
+        <mat-card-title>
+          Firebase Resources
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Here are some links to help you get started with Firebase:</p>
+        <mat-list>
+          <mat-list-item>
+            <h2>
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://firebase.google.com/docs/"
+                >Firebase Docs</a
+              >
+            </h2>
+          </mat-list-item>
+          <mat-list-item>
+            <h2>
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://firebase.google.com/docs/hosting/"
+                >Hosting Documentation</a
+              >
+            </h2>
+          </mat-list-item>
+          <mat-list-item>
+            <h2>
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://firebase.googleblog.com/"
+                >Firebase blog</a
+              >
+            </h2>
+          </mat-list-item>
+        </mat-list>
+      </mat-card-content>
+    </mat-card>
+
+    <!-- Angular Material card -->
+    <mat-card class="ngmat">
+        <mat-card-header>
+          <img
+            mat-card-avatar
+            alt="Angular Material logo"
+            src="https://img.icons8.com/ios/48/000000/angularjs-filled.png"
+          />
+          <mat-card-title>
+            Angular Material Resources
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>Here are some links to help you get started with Angular Material:</p>
+          <mat-list>
+            <mat-list-item>
+              <h2>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="https://material.angular.io/guide/getting-started"
+                  >Getting Started</a
+                >
+              </h2>
+            </mat-list-item>
+            <mat-list-item>
+              <h2>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="https://material.angular.io/components/categories"
+                  >Components</a
+                >
+              </h2>
+            </mat-list-item>
+          </mat-list>
+        </mat-card-content>
+      </mat-card>
+  </div>
 
 <router-outlet></router-outlet>
+
+<!-- Footer -->
+External icons provided by <a href="https://icons8.com">Icons8</a>

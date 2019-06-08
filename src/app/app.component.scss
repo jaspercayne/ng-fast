@@ -1,0 +1,30 @@
+mat-card {
+  background-color: whitesmoke;
+  margin: 2%;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.resources{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.ngfast{
+  max-width: 98vw;
+}
+
+.angular {
+  max-width: 40vw;
+}
+
+.firebase {
+  max-width: 40vw;
+}
+
+.ngmat{
+  max-width: 40vw;
+}
