@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
   @Input() foundingYear: number;
+  @Input() author: string;
   currentYear: number = new Date().getFullYear();
   datestamp: string;
   constructor() {}
