@@ -1,10 +1,15 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <img alt="Ng-Fast logo" src="https://firebasestorage.googleapis.com/v0/b/ng-fast.appspot.com/o/icon.png?alt=media&token=525a6e64-84fb-4b53-812e-5c414beec998" style="max-width: 48px;"/>
+    <img
+      mat-card-avatar
+      alt="Ng-Fast logo"
+      src="https://firebasestorage.googleapis.com/v0/b/ng-fast.appspot.com/o/icon.png?alt=media&token=525a6e64-84fb-4b53-812e-5c414beec998"
+      style="max-width: 48px;"
+    />
     {{ title }}
   </mat-toolbar-row>
 </mat-toolbar>
 <mat-toolbar color="accent" class="navbar">
-  <a routerLink="home">Home</a>
-  <a routerLink="resources">Resources</a>
+  <a routerLink="/home">Home</a>
+  <a routerLink="/resources">Resources</a>
 </mat-toolbar>
