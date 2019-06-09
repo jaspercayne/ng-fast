@@ -4,16 +4,26 @@ import { paths } from './app.paths';
 
 const routes: Routes = [
   {
+    path: paths.home,
+    loadChildren: () =>
+      import('./pages/home/home.module').then(m => m.HomeModule)
+  },
+  {
     path: paths.resourcepages.angular,
-    loadChildren : () => import('./pages/angular/angular.module').then(m => m.AngularModule)
+    loadChildren: () =>
+      import('./pages/angular/angular.module').then(m => m.AngularModule)
   },
   {
     path: paths.resourcepages.firebase,
-    loadChildren : () => import('./pages/firebase/firebase.module').then(m => m.FirebaseModule)
+    loadChildren: () =>
+      import('./pages/firebase/firebase.module').then(m => m.FirebaseModule)
   },
   {
     path: paths.resourcepages.ngmat,
-    loadChildren : () => import('./pages/ngmaterial/ngmaterial.module').then(m => m.NgMaterialModule)
+    loadChildren: () =>
+      import('./pages/ngmaterial/ngmaterial.module').then(
+        m => m.NgMaterialModule
+      )
   }
 ];
 
@@ -21,4 +31,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
