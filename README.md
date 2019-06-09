@@ -1,4 +1,7 @@
 # NgFast
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/73c43fda7e5c4a98973fe7fc2ba4ffb7)](https://app.codacy.com/app/jaspercayne/ng-fast?utm_source=github.com&utm_medium=referral&utm_content=jaspercayne/ng-fast&utm_campaign=Badge_Grade_Dashboard)
+
 ![Travis (.org)](https://img.shields.io/travis/jaspercayne/ng-fast.svg)
 ![David](https://img.shields.io/david/jaspercayne/ng-fast.svg)
 ![GitHub issues](https://img.shields.io/github/issues/jaspercayne/ng-fast.svg)
