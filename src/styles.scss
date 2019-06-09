@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+/**
+* Generated theme by Material Theme Generator
+* https://material-theme-generator.travetto.io
+*/
+@import "./app-theme.scss";
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+}
+
+a{
+  color: antiquewhite;
+}

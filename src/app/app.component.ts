@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ng-fast';
+  title = 'ng-FAsT';
+  foundingYear = Number(new Date().getFullYear().toString());
 }
