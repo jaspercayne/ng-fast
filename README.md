@@ -1,4 +1,8 @@
 # NgFast
+![Travis (.org)](https://img.shields.io/travis/jaspercayne/ng-fast.svg)
+![Codecov](https://img.shields.io/codecov/c/github/jaspercayne/ng-fast.svg)
+![David](https://img.shields.io/david/jaspercayne/ng-fast.svg)
+![GitHub issues](https://img.shields.io/github/issues/jaspercayne/ng-fast.svg)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
 
