@@ -9,12 +9,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Features
 - All green Lighthouse scores
+- Passes all Lighthouse PWA tests
 - Full lazy loading
 - Firebase hosting
 - CDN served icons and images
 - Easily switchable custom Material theme
-- Passes all PWA tests
 - Exceptionally low bundle size (142.9 KB gzipped)
+- High memory node scripts (makes compilation faster)
 
 ## Development server
 
