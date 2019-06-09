@@ -11,7 +11,7 @@ before_script:
 script:
   - npm install
   - npm run build
-  - npm run test --code-coverage
+  - npm run test --code-coverage --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
   - codecov
 deploy:
   skip_cleanup: true
