@@ -1,8 +1,9 @@
 # NgFast
-![Travis (.org)](https://img.shields.io/travis/jaspercayne/ng-fast.svg)
+[![Travis (.org)](https://img.shields.io/travis/jaspercayne/ng-fast.svg)](https://travis-ci.org/jaspercayne/ng-fast)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/416ae7ab519647198f2ad3cdb2a76e86)](https://www.codacy.com/app/jaspercayne/ng-fast?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jaspercayne/ng-fast&amp;utm_campaign=Badge_Grade)
-![David](https://img.shields.io/david/jaspercayne/ng-fast.svg)
-![GitHub issues](https://img.shields.io/github/issues/jaspercayne/ng-fast.svg)
+[![David](https://img.shields.io/david/jaspercayne/ng-fast.svg)](https://david-dm.org/jaspercayne/ng-fast)
+[![GitHub issues](https://img.shields.io/github/issues/jaspercayne/ng-fast.svg)](https://github.com/jaspercayne/ng-fast/issues)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
 
