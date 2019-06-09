@@ -6,14 +6,9 @@ branches:
     - master
 before_script:
   - npm install -g @angular/cli
-  - npm install -g codecov
-  - npm install -g istanbul
-  - npm install -g mocha
 script:
   - npm install
   - npm run build
-  - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
-  - codecov
 deploy:
   skip_cleanup: true
   provider: firebase
