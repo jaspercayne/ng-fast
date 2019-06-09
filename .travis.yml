@@ -8,9 +8,6 @@ before_script:
   - npm install -g @angular/cli
 script:
   - npm install
-  - cd functions
-  - npm install
-  - cd ..
   - npm run build
 deploy:
   skip_cleanup: true
