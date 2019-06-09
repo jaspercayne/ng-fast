@@ -1,13 +1,16 @@
 .footContainer{
-
+  display: flex;
+  justify-content: space-between;
 }
 
 .links{
-  width: 48vw;
+  display: flex;
+  flex-wrap: wrap;
   font-size: 0.65em;
 }
 
 .copyright{
-  width: 48vw;
+  display: flex;
+  flex-wrap: wrap;
   text-align: end;
 }
