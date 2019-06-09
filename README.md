@@ -6,6 +6,15 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
 
+## Features
+- All green Lighthouse scores
+- Full lazy loading
+- Firebase hosting
+- CDN served icons and images
+- Easily switchable custom Material theme
+- Passes all PWA tests
+- Exceptionally low bundle size (142.9 KB gzipped)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
